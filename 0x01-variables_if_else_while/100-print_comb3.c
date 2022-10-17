@@ -9,19 +9,21 @@ int main(void)
 {
 	int c, i;
 
-	for (c = '0'; i <= '9'; i++)
+	for (c = '0'; i <= '9'; c++)
 	{
-		if (c < i)
+		for (i = '0'; i <= '9'; i++)
 		{
-			putchar(c);
-			putchar(i);
-
-			if (c != '8' || (c == '0' && i != '9'))
+			if (c < i)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(c);
+				putchar(i);
+
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-		}
 	}
 	putchar('\n');
 	return (0);
