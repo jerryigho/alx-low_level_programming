@@ -18,7 +18,7 @@ int main(void)
 
 			if (c != '8' || (c == 'g' && i != '9'))
 			{
-				putchart(',');
+				putchar(',');
 				putchar(' ');
 			}
 		}
