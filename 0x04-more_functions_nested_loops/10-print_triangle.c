@@ -2,7 +2,7 @@
 
 /**
  * print_triangle - entry point
- * owned by Bwave/jerry oghenekevwe igho
+ * created by jerry oghenekevwe igho
  * Description: Prints diagonals
  * @size: size of the triangle
  * Return: void
