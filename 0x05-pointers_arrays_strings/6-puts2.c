@@ -1,16 +1,17 @@
 #include "main.h"
 /**
- * _strcpy - copy the string pointed to by src to dest
- * @dest: char to check
- * @src: char to check
+ * puts2 - prints every other character of a string
+ *
+ * @str: char to check
+ *
  * Return: 0 is success
  */
-char *_strcpy(char *dest, char *src)
+void puts2(char *str)
 {
-	int a;
+	int string;
 
-	for (a = 0; src[a] != '\0'; a++)
-		dest[a] = src[a];
-	dest[a] = '\0';
-	return (dest);
+	for (string = 0; str[string] != '\0'; string++)
+	if (string % 2 == 0)
+		_putchar(str[string]);
+	_putchar('\n');
 }
